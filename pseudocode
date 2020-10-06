@@ -1,13 +1,5 @@
 '''
-      __        _______    _______       __      
-     /""\      /"      \  /"     "|     /""\     
-    /    \    |:        |(: ______)    /    \    
-   /' /\  \   |_____/   ) \/    |     /' /\  \   
-  //  __'  \   //      /  // ___)_   //  __'  \  
- /   /  \\  \ |:  __   \ (:      "| /   /  \\  \ 
-(___/    \___)|__|  \___) \_______)(___/    \___)
-By Connor Rilett
-
+This is pseudocode for Area Calculator
 '''
 
 def square 
@@ -16,7 +8,7 @@ def square
 
 def rect 
   ask for length & width
-  calc l*w
+  calc l*w 
 
 def circle
   ask for radius
