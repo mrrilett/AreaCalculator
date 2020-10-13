@@ -1,0 +1,56 @@
+def logo():
+    print('------------------------------------------')
+    print('------------------------------------------')
+    print('------A R E A --- C A L C U L A T O R-----')
+    print('------------------------------------------')
+    print('------------------------------------------')
+    print('--------------Created by: C. Rilett-------\n\n')
+
+def areaOfSquare():
+    sideLength = input("Enter the side length of the square: ")
+    sideLength = int(sideLength)
+    SquareArea = sideLength * sideLength
+    print("The area of the square is: ", SquareArea)
+    
+def areaOfRectangle():
+    length = input("Enter the length of the rectangle: ")
+    width = input("Enter the width of the rectangle: ")
+    length = int(length)
+    width = int(width)
+    RectangleArea = length * width
+    
+    print("The area of the rectangle is: ", RectangleArea)
+    
+def areaOfCircle():
+    radius = input("Enter the radius of the circle: ")
+    radius = int(radius)
+    CircleArea = 3.14159265359 * radius ** 2
+    print("The area of the circle is: ", CircleArea)
+    
+def areaOfTriangle():
+    base = input("Enter the base of the triangle: ")
+    height = input("Enter the height of the triangle: ")
+    base = int(base)
+    height = int(height)
+    TriangleArea = base * height / 2
+    print("The area of the triangle is: ", TriangleArea)
+
+
+def mainMenu():
+    logo()
+    userChoice = input("Would you like to calculate area for a square (s), rectangle (r), circle (c), or triangle (t)? Please enter your letter choice: ")
+    if(userChoice == 's'):
+        areaOfSquare()
+    elif(userChoice == 'r'):
+        areaOfRectangle()
+    elif(userChoice == 'c'):
+        areaOfCircle()
+    elif(userChoice == 't'):
+        areaOfTriangle()
+    else:
+        print("Invalid Choice.")
+        mainMenu()
+
+mainMenu()
+
+
